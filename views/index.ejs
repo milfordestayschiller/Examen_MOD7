@@ -1,0 +1,34 @@
+<%- include("template/cabecera", {tituloWeb: 'Página de Inicio'}) %>
+
+  
+    <div class="container text-center col-3" >
+      
+        <h1 class="text-primary">Login</h1>
+        <h2><%= titulo %></h2>
+    <form action="user/login" method="post">
+        <!-- Email input -->
+        <div class="form-outline mb-4">
+            Email
+          <input type="email" id="email" class="form-control" name="email" placeholder="example@gmail.com"/>
+          
+        </div>
+      
+        <!-- Password input -->
+        <div class="form-outline mb-4">
+            Password
+          <input type="password" id="password" class="form-control" name="password" placeholder="Tu contraseña"/>
+          
+        </div>
+      
+       
+      
+         
+      
+        <!-- Submit button -->
+        <button type="submit" id="boton" class="btn btn-primary btn-block mb-4">Entrar</button>
+      
+       
+        </div>
+      </form>
+    </div>
+<%- include("template/footer") %>
